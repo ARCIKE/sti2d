@@ -1,73 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sti2d</title>
-
-	<meta charset="UTF-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>STI2D</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+<style>*{scroll-behavior: smooth;}</style>
 <header class="text-gray-600 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-      <a href="https://www.libmanuels.fr/demo/9782206105147/0?title=Math%C3%A9matiques%20enseignement%20commun%20et%20sp%C3%A9cialit%C3%A9%20Tle%20STI2D/STL%20(2020)&editor=Delagrave" class="mr-5 hover:text-yellow-500">Maths</a>
-      <a href="https://www.libmanuels.fr/demo/9782206104973/0?title=Physique%20-%20Chimie%20Tle%20STI2D%20(2020)&editor=Delagrave" class="mr-5 hover:text-yellow-500">Physique</a>
-      <a href="https://www.libmanuels.fr/demo/9782210114395/0?title=Histoire-G%C3%A9ographie%20Tle%20technologique%20(Ed.%20num.%202021)&editor=Magnard" class="mr-5 hover:text-yellow-500">Histoire-Géographie</a>
+    <nav class="flex lg:w-2/5  flex-wrap items-center text-base md:ml-auto md:justify-center">
+      <a href="" class="mr-5 hover:text-blue-500">Que faire après ?</a>
+      <a href="#stats" class="mr-5 hover:text-blue-500">Résultat au BAC</a>
+      <a href="#books" class="mr-5 hover:text-blue-500">Outils (Manuels, Convertisseur)</a>
     </nav>
     <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
+      <svg class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
       <span class="ml-3 text-xl">STI2D</span>
     </a>
     <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-      <button onclick="convertisseur()" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Convertisseur
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
+      <button  class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">S'inscrire
+        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
       </button>
     </div>
   </div>
 </header>
 
 <section class="bg-gray-900">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#ffffff" fill-opacity="1" d="M0,192L40,192C80,192,160,192,240,202.7C320,213,400,235,480,213.3C560,192,640,128,720,117.3C800,107,880,149,960,144C1040,139,1120,85,1200,69.3C1280,53,1360,75,1400,85.3L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#ffffff" fill-opacity="1" d="M0,192L40,192C80,192,160,192,240,202.7C320,213,400,235,480,213.3C560,192,640,128,720,117.3C800,107,880,149,960,144C1040,139,1120,85,1200,69.3C1280,53,1360,75,1400,85.3L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+  </svg>
 </section>
 
-<section class="text-gray-400 bg-gray-900 body-font">
+
+<section id="stats" class="text-gray-400 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap justify-center -mx-4 -mb-10 text-center">
-      <div class="sm:w-1/3 mb-10 px-4">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/article/5eaa858e76af81012a7a3b31_large.jpg?1619724155">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Résultats des BAC TECHNO 2021</h1>
+    </div>
+    <div class="flex flex-wrap -m-4 text-center ">
+      <div class="p-4 md:w-1/2 sm:w-1/2 w-full transform transition duration-500 hover:scale-105">
+        <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+          <svg class="animate-pulse w-12 h-12 inline-block mb-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+          <h2 class="title-font font-medium text-3xl text-white">91.62%</h2>
+          <p class="leading-relaxed">TAUX D'ADMISSION</p>
         </div>
-        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">Delagrave</h2>
-        <p class="leading-relaxed text-base">Mathématiques</p>
-        <button onclick="maths()" class="flex mx-auto mt-6 text-white bg-yellow-500 border-0 py-2 px-5 focus:outline-none hover:bg-yellow-600 rounded">Livre en ligne</button>
       </div>
-      <div class="sm:w-1/3 mb-10 px-4">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/product/5ea0740eeb03eb01a0c3ebfc_large.jpg?1587573773">
+      <div class="p-4 md:w-1/2 sm:w-1/2 w-full transform transition duration-500 hover:scale-105">
+        <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="animate-pulse text-blue-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-white">35093</h2>
+          <p class="leading-relaxed">CANDITATS ADMIS</p>
         </div>
-        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">Delagrave</h2>
-        <p class="leading-relaxed text-base">Physique - Chimie</p>
-        <button onclick="ph()"class="flex mx-auto mt-6 text-white bg-yellow-500 border-0 py-2 px-5 focus:outline-none hover:bg-yellow-600 rounded">Livre en ligne</button>
       </div>
-      <div class="sm:w-1/3 mb-10 px-4">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/article/5ea1ce30955ec432e5369354_large.jpg?1619789333">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full transform transition duration-500 hover:scale-105">
+        <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+          <svg class="animate-pulse w-12 h-12 mb-4 text-blue-400 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+          <h2 class="title-font font-medium text-3xl text-white">39.6%</h2>
+          <p class="leading-relaxed">ADMIS MENTION ASSEZ BIEN</p>
         </div>
-        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">Magnard</h2>
-        <p class="leading-relaxed text-base">Histoire-Géographie</p>
-        <button onclick="hist()"class="flex mx-auto mt-6 text-white bg-yellow-500 border-0 py-2 px-5 focus:outline-none hover:bg-yellow-600 rounded">Livre en ligne</button>
+      </div>
+      <div class="p-4 md:w-1/2 sm:w-1/2 w-full transform transition duration-500 hover:scale-105">
+        <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="animate-pulse text-blue-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h2 class="title-font font-medium text-3xl text-white">16.17%</h2>
+          <p class="leading-relaxed">ADMIS MENTION BIEN</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full transform transition duration-500 hover:scale-105">
+        <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+          <svg class="animate-pulse w-12 h-12 mb-3 text-blue-400 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+          <h2 class="title-font font-medium text-3xl text-white">3.11%</h2>
+          <p class="leading-relaxed">MENTION TRÈS BIEN</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<section id="books" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20 transform transition duration-500 hover:scale-110">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-400 hover:text-white transition">Lives numériques de Terminale</h1>
+    </div>
+    <div class="flex flex-wrap justify-center -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/3 mb-10 px-4 transform transition duration-500 hover:scale-110">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/article/5eaa858e76af81012a7a3b31_large.jpg?1619724155">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">Delagrave</h2>
+        <p class="leading-relaxed text-base">Mathématiques</p>
+        <button onclick="maths()" class="flex mx-auto mt-6 text-white bg-blue-500 border-0 py-2 px-5 focus:outline-none hover:bg-blue-600 rounded">Livre en ligne</button>
+      </div>
+      <div class="sm:w-1/3 mb-10 px-4 transform transition duration-500 hover:scale-110">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/product/5ea0740eeb03eb01a0c3ebfc_large.jpg?1587573773">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">Delagrave</h2>
+        <p class="leading-relaxed text-base">Physique - Chimie</p>
+        <button onclick="ph()"class="flex mx-auto mt-6 text-white bg-blue-500 border-0 py-2 px-5 focus:outline-none hover:bg-blue-600 rounded">Livre en ligne</button>
+      </div>
+      <div class="sm:w-1/3 mb-10 px-4 transform transition duration-500 hover:scale-110">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/article/5ea1ce30955ec432e5369354_large.jpg?1619789333">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">Magnard</h2>
+        <p class="leading-relaxed text-base">Histoire-Géographie</p>
+        <button onclick="hist()"class="flex mx-auto mt-6 text-white bg-blue-500 border-0 py-2 px-5 focus:outline-none hover:bg-blue-600 rounded">Livre en ligne</button>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="convertisseur" class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
@@ -78,70 +128,66 @@
         <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
           <input type = "text" name = "deci" id = "deci" size = "15" maxlength = "15" id="hero-field" name="hero-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:ring-2 focus:ring-yellow-900 focus:bg-transparent focus:border-yellow-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
-        <button value="Convert!" onclick="dec2bin()" class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Convertir</button>
+        <button value="Convert!" onclick="dec2bin()" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Convertir</button>
       </div>
       <p class="text-sm mt-2 text-gray-500 mb-8 w-full"><div id = "result"></div></p>
-      </div>
     </div>
+  </div>
   </div>
 </section>
 
 <script type = "text/javascript">
 
-function dec2bin() {
-var x = document.getElementById("deci").value;
-if ((/[^0-9]/g.test(x)) || x == "") {
-alert ("Vous devez entrer un nombre décimal entier!");
-document.getElementById("deci").value = "";
-document.getElementById("deci").focus();
-return false;
-}
-x = parseInt(x);
-var bin = x.toString(2);
-var hex = x.toString(16).toUpperCase();
-var octal = x.toString(8);
+  function dec2bin() {
+    var x = document.getElementById("deci").value;
+    if ((/[^0-9]/g.test(x)) || x == "") {
+      alert ("Vous devez entrer un nombre décimal entier!");
+      document.getElementById("deci").value = "";
+      document.getElementById("deci").focus();
+      return false;
+    }
+    x = parseInt(x);
+    var bin = x.toString(2);
+    var hex = x.toString(16).toUpperCase();
+    var octal = x.toString(8);
 
 
-var figs = "La représentation binaire de " + x + " est " + bin + "<br>";
-figs = figs + "La représentation hexadécimale de " + x + " est " + hex + "<br>";
-figs = figs + "La représentation octale de " + x + " est " + octal + "<br>";
+    var figs = "La représentation binaire de " + x + " est " + bin + "<br>";
+    figs = figs + "La représentation hexadécimale de " + x + " est " + hex + "<br>";
+    figs = figs + "La représentation octale de " + x + " est " + octal + "<br>";
 
-document.getElementById("result").innerHTML = figs;
-}
+    document.getElementById("result").innerHTML = figs;
+  }
 </script>
 
-<section class="bg-gray-900">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#ffffff" fill-opacity="1" d="M0,224L40,234.7C80,245,160,267,240,234.7C320,203,400,117,480,90.7C560,64,640,96,720,122.7C800,149,880,171,960,176C1040,181,1120,171,1200,154.7C1280,139,1360,117,1400,106.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-</svg>
-</section>
+
 <footer class="text-gray-600 body-font">
+  <div class="bg-gray-900">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1" d="M0,224L40,234.7C80,245,160,267,240,234.7C320,203,400,117,480,90.7C560,64,640,96,720,122.7C800,149,880,171,960,176C1040,181,1120,171,1200,154.7C1280,139,1360,117,1400,106.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg>
+  </div>
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
+      <svg class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
       <span class="ml-3 text-xl">STI2D</span>
     </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 — Fait par Alex</p>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 — Fait par Alex N.</p>
   </div>
 </footer>
 <script>
-function convertisseur() {
-  window.open("#convertisseur");
-}
 
-function maths() {
-  window.open("https://www.libmanuels.fr/demo/9782206105147/0?title=Math%C3%A9matiques%20enseignement%20commun%20et%20sp%C3%A9cialit%C3%A9%20Tle%20STI2D/STL%20(2020)&editor=Delagrave");
-}
+  function maths() {
+    window.open("https://www.libmanuels.fr/demo/9782206105147/0?title=Math%C3%A9matiques%20enseignement%20commun%20et%20sp%C3%A9cialit%C3%A9%20Tle%20STI2D/STL%20(2020)&editor=Delagrave");
+  }
 
-function ph() {
-  window.open("https://www.libmanuels.fr/demo/9782206104973/0?title=Physique%20-%20Chimie%20Tle%20STI2D%20(2020)&editor=Delagrave");
-}
+  function ph() {
+    window.open("https://www.libmanuels.fr/demo/9782206104973/0?title=Physique%20-%20Chimie%20Tle%20STI2D%20(2020)&editor=Delagrave");
+  }
 
-function hist() {
-  window.open("https://www.libmanuels.fr/demo/9782210114395/0?title=Histoire-G%C3%A9ographie%20Tle%20technologique%20(Ed.%20num.%202021)&editor=Magnard");
-}
+  function hist() {
+    window.open("https://www.libmanuels.fr/demo/9782210114395/0?title=Histoire-G%C3%A9ographie%20Tle%20technologique%20(Ed.%20num.%202021)&editor=Magnard");
+  }
 </script>
 
 </body>
