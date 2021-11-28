@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STI2D — Manuels</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<style>.dropdown:hover .dropdown-menu {display: block;}</style>
+<div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+        <header class="flex justify-between items-center py-4 md:py-6 mb-4">
+            <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                STI2D
+            </a>
+            <nav class="hidden lg:flex gap-12">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Acceuil</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Présentation de notre <br>projet de fin d'année</a>
+                <a href="stats.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Statistique au BAC</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Poursuite d'Etudes</a>
+                <a href="#" class="text-indigo-500 text-lg font-semibold">Manuels</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Convertisseur
+            </nav>
+            <a href="forms.html" class="hidden lg:inline-block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">S'inscrire</a>
+            <button type="button" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+                <svg class="w-6 h-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+                Menu
+            </button>
+        </header>
+        <section class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-6 md:mb-8">
+            <div class="flex flex-col border rounded-lg overflow-hidden sm:mt-8">
+                <div class="h-2 bg-pink-500"></div>
+
+                <div class="flex flex-col flex-1 p-6 pt-8">
+                    <div class="mb-12">
+                        <div class="text-gray-800 text-2xl font-bold text-center mb-2">Mathématiques</div>
+
+                        <div class="rounded-lg overflow-hidden h-64">
+                            <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/article/5eaa858e76af81012a7a3b31_large.jpg?1619724155">
+                        </div>
+                    </div>
+
+                    <div class="mt-auto">
+                        <a href="https://www.libmanuels.fr/demo/9782206105147/0?title=Math%C3%A9matiques%20enseignement%20commun%20et%20sp%C3%A9cialit%C3%A9%20Tle%20STI2D/STL%20(2020)&editor=Delagrave" target="_blank" class="block bg-pink-500 hover:bg-pink-600 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Voir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col border rounded-lg overflow-hidden sm:mt-8">
+                <div class="h-2 bg-indigo-500"></div>
+
+                <div class="flex flex-col flex-1 p-6 pt-8">
+                    <div class="mb-12">
+                        <div class="text-gray-800 text-2xl font-bold text-center mb-2">Physique-Chimie</div>
+
+                        <div class="rounded-lg overflow-hidden h-64">
+                            <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/product/5ea0740eeb03eb01a0c3ebfc_large.jpg?1587573773">
+                        </div>
+                    </div>
+
+                    <div class="mt-auto">
+                        <a href="https://www.libmanuels.fr/demo/9782206104973/0?title=Physique%20-%20Chimie%20Tle%20STI2D%20(2020)&editor=Delagrave" target="_blank" class="block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Voir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col border rounded-lg overflow-hidden sm:mt-8">
+                <div class="h-2 bg-gray-800"></div>
+
+                <div class="flex flex-col flex-1 p-6 pt-8">
+                    <div class="mb-12">
+                        <div class="text-gray-800 text-2xl font-bold text-center mb-2">Histoire-Géographie</div>
+
+                        <div class="rounded-lg overflow-hidden h-64">
+                            <img alt="content" class="object-contain object-center h-full w-full" src="https://storage.gra.cloud.ovh.net/v1/AUTH_2e379e37cf4645fd882e7f4f741be2a3/edulib__production__site__assets/paperclip_assets/article/5ea1ce30955ec432e5369354_large.jpg?1619789333">
+                        </div>
+                    </div>
+
+                    <div class="mt-auto">
+                        <a href="https://www.libmanuels.fr/demo/9782210114395/0?title=Histoire-G%C3%A9ographie%20Tle%20technologique%20(Ed.%20num.%202021)&editor=Magnard" target="_blank" class="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Voir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
