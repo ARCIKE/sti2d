@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STI2D — Poursuite d'Etudes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+        <header class="flex justify-between items-center py-4 md:py-6 mb-4">
+            <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                STI2D
+            </a>
+            <nav class="hidden lg:flex gap-12">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Accueil</a>
+                <a href="projet.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Présentation de notre <br>projet de fin d'année</a>
+                <a href="stats.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Statistiques au BAC</a>
+                <a href="#" class="text-indigo-500 text-lg font-semibold">Poursuite d'Etudes</a>
+                <a href="manuels.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Manuels</a>
+            </nav>
+            <a href="forms.html" class="hidden lg:inline-block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">S'inscrire</a>
+            <button type="button" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+                <svg class="w-6 h-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+                Menu
+            </button>
+        </header>
+        <section class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-6 md:mb-8">
+            <div class="flex flex-col border rounded-lg overflow-hidden sm:mt-8">
+                <div class="h-2 bg-green-500"></div>
+                <div class="flex flex-col flex-1 p-6 pt-8">
+                    <div class="mb-12">
+                        <div class="text-gray-800 text-2xl font-bold text-center mb-2">BTS</div>
+                        <div class="space-y-5">
+                            <div class="flex justify-center text-gray-900 hover:text-green-500">
+                                <li class="text-base">
+                                    Les BTS du bâtiment, travaux publics, architecture : BTS agencement de l’environnement architectural, BTS travaux publics
+                                </li>
+                            </div>
+                            <div class="flex justify-center text-gray-900 hover:text-green-500">
+                                <li class="text-base">
+                                    Les BTS énergies et environnement : BTS conception et réalisation de systèmes automatiques, BTS électronique, BTS environnement
+                                </li>
+                            </div>
+                            <div class="flex justify-center text-gray-900 hover:text-green-500">
+                                <li class="text-base">
+                                    Les BTS audiovisuel, électronique, informatique, télécoms et numérique : BTS SIO, BTS communication visuelle, BTS métiers de l’Audiovisuel
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col border rounded-lg overflow-hidden sm:mt-8">
+                <div class="h-2 bg-red-500"></div>
+
+                <div class="flex flex-col flex-1 p-6 pt-8">
+                    <div class="mb-12">
+                        <div class="text-gray-800 text-2xl font-bold text-center mb-2">BUT</div>
+
+                        <div class="space-y-2">
+                            <div class="flex justify-center text-gray-900">
+                                <ul class="text-base">
+                                    <p class="hover:text-red-500">Du côté des BUT, les étudiants issus d’un Bac STI2D ont également le choix parmi de nombreuses spécialités qui couvrent un domaine professionnel assez large :</p>
+                                    <li class="text-center mt-3 hover:text-red-500">
+                                        BUT Chimie
+                                    </li>
+                                    <li class="text-center mt-3 hover:text-red-500">
+                                        BUT Génie chimique
+                                    </li>
+                                    <li class="text-center mt-2 hover:text-red-500">
+                                        BUT Génie civil
+                                    </li>
+                                    <li class="text-center mt-2 hover:text-red-500">
+                                        BUT Hygiène, sécurité, environnement
+                                    </li>
+                                    <li class="text-center mt-2 hover:text-red-500">
+                                        BUT Réseaux et télécommunications
+                                    </li>
+                                    <li class="text-center mt-2 hover:text-red-500">
+                                        BUT Métiers du Multimédia et de l’internet
+                                    </li>
+                                    <li class="text-center mt-2 hover:text-red-500">
+                                        BUT Informatique
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col border rounded-lg overflow-hidden sm:mt-8">
+                <div class="h-2 bg-blue-800"></div>
+
+                <div class="flex flex-col flex-1 p-6 pt-8">
+                    <div class="mb-12">
+                        <div class="text-gray-800 text-2xl font-bold text-center mb-2">Autres (Bachelor)</div>
+
+                        <div class="space-y-2">
+                            <div class="flex justify-center text-gray-900">
+                                <ul class="text-base">
+                                    <p class="hover:text-blue-500">Certains établissements proposent des bachelors accessibles dès la sortie du bac, qui se réalisent en 3 ans au sein d’une école d’ingénieurs, d’une école d’informatique, école d’environnement. Il sera possible de vous spécialiser dans un secteur dans lequel vous souhaitez poursuivre vos études. Voici quelques exemples de formation accessibles après un bac STI2D :</p>
+                                    <li class="text-center mb-1 hover:text-blue-500">
+                                        Bachelor Métiers du Bois
+                                    </li>
+                                    <li class="text-center mb-1 hover:text-blue-500">
+                                        Bachelor Industrie
+                                    </li>
+                                    <li class="text-center mb-1 hover:text-blue-500">
+                                        Bachelor Environnement
+                                    </li>
+                                    <li class="text-center mb-1 hover:text-blue-500">
+                                        Bachelor Technologie
+                                    </li>
+                                    <li class="text-center hover:text-blue-500">
+                                        Bachelor Systèmes numériques
+                                    </li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
