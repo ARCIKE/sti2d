@@ -4,41 +4,59 @@
     <title>STI2D — Inscription</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="tailwind.css" rel="stylesheet">
 </head>
 <body>
-<div class="bg-white py-6 sm:py-8 lg:py-12">
+<div class="bg-white pb-2 sm:pb-4 lg:pb-8">
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <marquee scrolldelay="10"><h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-8">Création d'un compte</h2></marquee>
-        <form class="max-w-lg border rounded-lg mx-auto" name="register" method="POST" data-netlify="true">
-            <div class="flex flex-col gap-4 p-4 md:p-8">
-                <div>
-                    <label for="name" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Nom</label>
-                    <input required="required" type="text" name="name" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+        <header class="flex justify-between items-center py-4 md:py-6 mb-4">
+            <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
+                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                STI2D
+            </a>
+            <nav class="hidden lg:flex gap-12">
+                <a href="#" class="text-indigo-500 text-lg font-semibold">Accueil</a>
+                <a href="projet.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Présentation de notre <br>projet de fin d'année</a>
+                <a href="stats.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Statistiques au BAC</a>
+                <a href="etudes.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Poursuite d'Etudes</a>
+                <a href="manuels.html" class="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">Manuels</a>
+            </nav>
+            <a href="forms.html" class="hidden lg:inline-block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">S'inscrire</a>
+            <button type="button" class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+                <svg class="w-6 h-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+                Menu
+            </button>
+        </header>
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+            <marquee scrolldelay="10"><h2 class="text-gray-800 text-xl lg:text-2xl font-bold text-center mb-4 md:mb-8">Création d'un compte</h2></marquee>
+            <form class="max-w-lg border rounded-lg mx-auto" name="register" method="POST" data-netlify="true">
+                <div class="flex flex-col gap-4 p-4 md:p-8">
+                    <div>
+                        <label for="name" class="inline-block text-gray-800 text-sm sm:text-base mb-1">Nom</label>
+                        <input required="required" type="text" name="name" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-1" />
+                    </div>
+                    <div>
+                        <label for="surname" class="inline-block text-gray-800 text-sm sm:text-base mb-1">Prénom</label>
+                        <input required="required" type="text" name="surname" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-1" />
+                    </div>
+                    <div>
+                        <label for="age" class="inline-block text-gray-800 text-sm sm:text-base mb-1">Âge</label>
+                        <input required="required" type="number" min="10" max="30" name="age" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-1" />
+                    </div>
+                    <div>
+                        <label for="adresse" class="inline-block text-gray-800 text-sm sm:text-base mb-1">Adresse</label>
+                        <input required="required" type="text" name="adresse" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-1" />
+                    </div>
+                    <div>
+                        <label for="tel" class="inline-block text-gray-800 text-sm sm:text-base mb-1">Téléphone</label>
+                        <input required="required" type="tel" name="tel" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-1" />
+                    </div>
+                    <button class="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-gray-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-2">S'inscrire</button>
                 </div>
-                <div>
-                    <label for="surname" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Prénom</label>
-                    <input required="required" type="text" name="surname" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
-                </div>
-                <div>
-                    <label for="age" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Âge</label>
-                    <input required="required" type="number" min="10" max="30" name="age" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
-                </div>
-                <div>
-                    <label for="adresse" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Adresse</label>
-                    <input required="required" type="text" name="adresse" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
-                </div>
-                <div>
-                    <label for="tel" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Téléphone</label>
-                    <input required="required" type="tel" name="tel" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
-                </div>
-                <button class="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-gray-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">S'inscrire</button>
-            </div>
-            <div class="flex justify-center items-center bg-gray-100 p-4">
-                <p class="text-gray-500 text-sm text-center">Vous avez déja un compte ? <a href="#" class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 transition duration-100">Se connecter</a></p>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
+
 </body>
 </html>
